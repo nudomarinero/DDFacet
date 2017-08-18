@@ -100,7 +100,7 @@ def src_pkg_dirs(pkg_name):
 
 def define_scripts():
     #these must be relative to setup.py according to setuputils
-    return [os.path.join(pkg, script_name) for script_name in ['DDF.py', 'CleanSHM.py', 'MemMonitor.py', 'Restore.py', 'SelfCal.py']]
+    return [os.path.join('bin', script_name) for script_name in ['DDF.py', 'CleanSHM.py', 'MemMonitor.py', 'Restore.py', 'SelfCal.py']]
 
 setup(name=pkg,
       version=get_version(),
